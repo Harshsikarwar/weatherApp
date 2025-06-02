@@ -222,7 +222,6 @@ p{
 @media(max-width:576px){
     .otherInfo{
         flex-direction: column;
-        align-self: start;
     }
 }
 
