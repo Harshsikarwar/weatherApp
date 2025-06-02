@@ -1,0 +1,315 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(27, 27, 27);
+    background-image:url("https://i.pinimg.com/1200x/8d/53/12/8d5312f930655bdd5d9fce23c520ae53.jpg");
+    background-repeat:repeat;
+    background-size: cover;
+}
+
+.title{
+    font-size: 74px;
+    font-weight: 900px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.weatherLogo{
+    display: flex-box;
+    justify-self: center;
+    width: 100%;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.logo{
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.808);
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5 ease-in-out;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 97%;
+    height: fit-content;
+    border-color: aquamarine;
+    margin: 20px;
+}
+
+.label{
+    font-size: 34px;
+    font-weight: 700;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.searchBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.input{
+    width:95%;
+    height: 38px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: none;
+    justify-self: center;
+    outline-color: yellow;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.input:hover{
+    outline-color: yellow;
+}
+
+.searchBtn{
+    height:35px;
+    width:35px;
+    margin-left: 15px;
+}
+
+.searchBtn:hover{
+    background-color: yellow;
+    border-color: yellow;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.tempInfo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.otherInfo{
+    display: flex;
+    flex-direction: row;
+    transition: all 0.5s ease-in-out;
+}
+
+.weatherInfo{
+    display: flex;
+    flex-direction: row;
+    transition: all 0.5s ease-in-out;
+}
+
+.InfoContainer{
+    display: none;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    margin: 5px;
+    width: fit-content;
+    transition: all 0.5s ease-in-out;
+}
+
+.currWeather{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#weatherLogo{
+    height: 180px;
+    width: 180px;
+    margin: 10px;
+}
+
+#cityName{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+#currTemp{
+    font-size: 65px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-top:0px;
+    margin-left: 16px;
+    margin-bottom: 0px;
+}
+
+#descript{
+    margin-top:0px;
+    margin-left: 18px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+#wcontainer_2{
+    flex-direction: column;;
+}
+
+@media (max-width:970px){
+    .title{
+        font-size: 60px;
+    }
+    .currTemp{
+        margin-left: 0px;
+    }
+
+    .searchBtn{
+        margin-left: 10px;
+    }
+
+    .weatherLogo{
+        margin: 5px;
+    }
+
+    .InfoContainer{
+        flex-direction: column;
+    }
+
+    .otherInfo{
+        border-width: 2px;
+        color: yellow;
+        border-style: solid;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:714px){
+    .searchBtn{
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media(max-width:576px){
+    .otherInfo{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:481px){
+    .logo{
+        height: 80px;
+        width: 80px;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .label{
+        font-size: 24px;
+    }
+    .input{
+        width: 85%;
+        height: 30px;
+        font-size: 16px;
+    }
+    .searchBtn{
+        margin-right: 15px;
+        height: 30px;
+        width: 30px;
+    }
+
+    p{
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #cityName{
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    #currTemp{
+        font-size: 50px;
+        margin-left: 10px;
+    }
+
+    #descript{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    #weatherLogo{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (max-width:396px){
+    #cityName{
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    #currTemp{
+        font-size: 40px;
+        margin-left: 5px;
+    }
+
+    #descript{
+        font-size: 16px;
+        margin-left: 5px;
+    }
+
+    #weatherLogo{
+        height: 120px;
+        width: 120px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:330px){
+    .logo{
+        height: 60px;
+        width: 60px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .label{
+        font-size: 20px;
+        text-align: left;
+    }
+}

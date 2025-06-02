@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="index.css" rel="stylesheet">
+        <title>Music App</title>
+    </head>
+    <body>
+        <div class="weatherLogo">
+            <img class="logo" src="https://cdn-icons-png.flaticon.com/128/9176/9176568.png">
+            <h1 class="title">Weather <b style="color:yellow">App</b></h1>
+        </div>
+        <div class="container">
+            <form class="form" method="post" onsubmit="fetchWeather()">
+                <label class="label">Enter City</label>
+                <div class="searchBox">
+                    <input type="text" class="input" id="cityInput" placeholder="e.g. New York">
+                    <img id="search" class="searchBtn" src="https://cdn-icons-png.flaticon.com/128/11741/11741045.png">
+                </div>
+            </form>
+
+            <div class="InfoContainer" id="weatherInfo">
+                <div class="weatherInfo">
+                    <img id="weatherLogo" src="https://cdn-icons-png.flaticon.com/128/6974/6974833.png">
+                    <div class="currWeather">
+                        <h2 id="cityName"></h2>
+                        <p id="currTemp"></p>
+                        <p id="descript"></p>
+                    </div>
+                </div>
+                <div class="otherInfo">
+                    <div class="tempInfo">
+                        <p id="feelslike"></p>
+                        <p id="maxTemp"></p>
+                        <p id="minTemp"></p>
+                    </div>
+                    <div class="tempInfo">
+                        <p id="humidity"></p>
+                        <p id="pressure"></p>
+                        <p id="windSpeed"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
