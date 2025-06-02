@@ -25,10 +25,6 @@ async function fetchWeather(city){
     let Main = [data.main.temp, data.main.feels_like, data.main.temp_min, data.main.temp_max, data.main.humidity, data.main.pressure];
     let Weather = [data.weather[0].main, data.weather[0].description, data.weather[0].icon];
     let wind = [data.wind.speed, data.wind.deg, data.wind.gust];
-    console.log("Data:", data);
-    console.log("Main:", Main);
-    console.log("Weather:", Weather);
-    console.log("Wind:", wind);
 
     const weatherInfo = document.getElementById("weatherInfo");
 
